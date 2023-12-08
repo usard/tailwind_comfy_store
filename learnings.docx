@@ -1,0 +1,28 @@
+if we want to invoke a reducer in another reducer we can use slicename.caseReducers(state)
+'action: loginAction' this is like this can be called after we go to the particular route , then clikcing on a button on that page. 
+we should use redirect in actions and loaders and useNavigate inside a react component
+we should compulsorily use name attribute on input tag for sending form data using request.formData() in action
+if you want to dispatch action in action or loaders use store.dispatch;
+for an action of react router dom we need to explicitly return null or any redirect otherwise it will throw route error
+to get the other slicestate in another slicestate of redux, use store.getState().slicename;// this will not work leads to cannot access specific reducer before initalization
+instead create a action for clearing cart and import that in the component and do it along with other slice action dispatch;
+
+i am unable to logout on cliking logut in header component: 
+i am using navlink for logout and using onCLick on this tag for handlelogout,
+so use button tag for this.
+
+
+when we log state in the reducer of a redux slice we see a proxy object we wont get info about the state of the slice , but we can edit the state from here , but we cannot view the state 
+
+####
+when i add more for a particular item that particular quantity is not showing correctly, some times it shows a concatenation of quanity i added , some times it just shows default one value in the cart page.
+i used parseInt for the additonal qunatity added.
+if a 401 error from server then redirect ther user to login page-- because token got invalid
+
+if u have a form through which u want to get data from the server then use Form component of react router dom with method ='GET', this will add the name attribute of input tags to the url of the page by which we can get data from the server 
+
+react router dom action will not be called for a Form  with get method 
+
+loaders for get methods on a form using react router dom will work same as actions for post methods 
+with post method on router form,action will be invoked on clicking the submit button.
+with get method on router form , loader will be invoked when there is change in the request url like additin of query params in to the request url. change in the request url will occur as we enter someting in the form  note: name attributes of form element should be same as quey params of the request

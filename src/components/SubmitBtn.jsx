@@ -5,7 +5,7 @@ const SubmitBtn = ({text, color, width}) => {
     const navigate = useNavigation();
     const isSubmitting = navigate.state === 'submitting'
   return (
-        <button type='submit'>{ isSubmitting ? <><span className='loading loading-spinner'></span></>: text || 'submit'}</button>
+        <button className='btn btn-secondary w-full' type='submit'>{ isSubmitting ? <><span className='loading loading-spinner'></span></>: text || 'submit'}</button>
   )
 }
 
